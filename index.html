@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+
+ <nav id="navbar">
+     <header>HTML& CSS Documentation</header>
+     <ul>
+         <li><a class="nav-link" href="#introduction">Introduction</a></li>
+         <li><a class="nav-link" href="#basic-elements">Basic-Elements</a></li>
+         <li><a class="nav-link" href="#links">Links</a></li>
+         <li><a class="nav-link" href="#lists">Lists</a></li>
+         <li><a class="nav-link" href="#images">Images</a></li>
+         <li><a class="nav-link" href="#styles">Styles</a></li>
+         <li><a class="nav-link" href="#selectors">Selectors</a></li>
+         <li><a class="nav-link" href="#pseudo-classes">Pseudo-classes</a></li>
+         <li><a class="nav-link" href="#Reference">Reference</a></li>
+     </ul>
+ </nav>
+
+ <main id="main-doc">
+     <section class="main-section" id="introduction">
+         <header>Introduction</header>
+         <article>
+         <p>HTML (HyperText Markup Language) is a standard developed over the years to convey information over the internet by using "hyperlinks" - or just links as we know them today. 
+             As opposed to a PDF, an HTML page is much more dynamic in nature,<br>
+              letting you browse the web by clicking on links and interacting with the page. 
+              Links could take you either to a different location within the current page,<br>
+               or to a different page over the internet.</p>
+               <br>
+               <p>The last version of HTML is HTML 5.0, which has a LOT more capabilities than what the web originally had in mind.
+                    HTML 5 is an extremely comprehensive platform that allows creating a high-end user interface together with the power of CSS and JavaScript.
+                     HTML 5 is so powerful that it has managed to deprecate Adobe Flash,
+                    Microsoft's Silverlight, and just about all HTML plugins such as video players, Java applets, and more.
+                </p>
+                <br>
+              <p>So what is the difference between HTML, CSS, and JavaScript? First of all, they can all be encapsulated within an HTML page,
+                   meaning that the browser starts by loading an HTML page, and only then it knows what to load from there.
+                </p>  
+                <ul>
+                    <li>An HTML page is an HTML document that defines the content of the page by using a special markup similar to XML.</li>
+                    <li>A CSS stylesheet defines the style of the HTML elements in the page. It is either embeeded within an HTML page or loaded using the tag.</li>
+                    <li>JavaScript is the programming language used to interact with the HTML page through an API called the DOM (Document Object Model) Bindings. 
+                        In other words,the DOM Bindings are the glue between the programming language and the HTML page that was initially loaded into the browser.</li>
+                </ul>
+                </article>
+     </section>
+ 
+
+ <section class="main-section" id="basic-elements">
+    <header>Basic-Elements</header>
+    <article>
+        <p>The basic elements of an HTML page are:</p>
+        <ul>
+        <li>A text header, denoted using the "h1", "h2", "h3", "h4", "h5", "h6" tags.</li>
+        <li>A paragraph, denoted using the "p", tag.</li>
+        <li>A horizontal ruler, denoted using the "hr" tag.</li>
+        <li>A link, denoted using the "a" (anchor) tag.</li>
+        <li>A list, denoted using the "ul" (unordered list), "ol" (ordered list) and "li" (list element) tags.</li>
+        <li>An image, denoted using the "img" tag</li>
+        <li>A divider, denoted using the "div" tag</li>
+        <li>A text span, denoted using the "span" tag</li>
+</ul>
+
+<h3>Text headers and paragraphs</h3>
+<p>There are six different types of text header you can choose from, h1 being the topmost heading with the largest text, and h6 being the most inner heading with the smallest text. In general,
+     you should have only one h1 tag with a page, since it should be the primary description of the HTML page.</p>
+    </article>
+    </section>
+
+
+    <section class="main-section" id="links">
+        <header>Links</header>
+        <article>
+            <p>A link ("anchor") is a small span of text that will direct you to a different section in the page, or to a different page. To create a link,
+                 you will need to specify where you would like the user to be directed to when the link is clicked by specifying the href attribute.</p>
+                 <p>For example:</p>
+                 <pre>
+                    <code><a href="https://www.google.com">A link to Google</a></code>
+                 </pre>
+        </article>
+    </section>
+    
+
+    <section class="main-section" id="lists">
+        <header>Lists</header>
+        <article>
+            <p>HTML provides a way to create both an ordered list (with elements counting up, 1, 2, 3...) and an unordered list with bullets instead of numbers. 
+                Lists are a good way to formalize a list of items and let the HTML styling do the work for you.</p>
+                <h3>Ordered lists</h3>
+                <ol>First</ol>
+                <ol>Second</ol>
+                <ol>Third</ol>
+                <ol>Forth</ol>
+                <h3>Unordered lists</h3>
+                <p>Here is a list of unordered items:</p>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <p>To change the list style attributes, we can use the CSS attribute called list-style-type. 
+                    The available types are:</p>
+                    <li>disc</li>
+                    <li>circle</li>
+                    <li>square</li>
+                    <li>none</li>
+
+        </article>
+    </section>
+
+
+
+    <section class="main-section" id="images">
+        <header>Images</header>
+        <article>
+            <p>Images are very important to beautify as well as to depict many complex concepts in simple way on your web page. 
+                This tutorial will take you through simple steps to use images in your web pages.</p>
+                <p>Images are not technically inserted into a web page; images are linked to web pages.
+                     The "img" tag creates a holding space for the referenced image.</p>
+                     <p>The "img" tag is empty, it contains attributes only, and does not have a closing tag.</p>
+                     <p>The "img" tag has two required attributes:</p>
+                     <ul>
+                        <li>src - Specifies the path to the image</li>
+                        <li>alt - Specifies an alternate text for the image</li>
+                     </ul>
+                     <h3>The src Attribute</h3>
+                     <p>The required src attribute specifies the path (URL) to the image.</p>
+                     <p><strong>Note:</strong>When a web page loads, it is the browser, at that moment, 
+                         that gets the image from a web server and inserts it into the page. Therefore, 
+                         make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon.
+                          The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+      </article>          
+    </section>
+    
+    <section class="main-section" id="styles">
+        <header>Styles</header>
+        <article>
+         <p>CSS is the language we use to style a Web page.</p>
+         <h3>What is CSS?</h3>
+         <ul>
+             <li>CSS stands for Cascading Style Sheets</li>
+             <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+             <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+             <li>External stylesheets are stored in CSS files</li>
+         </ul>
+         <h3>Why Use CSS</h3>
+         <p>CSS is used to define styles for your web pages, including the design, 
+             layout and variations in display for different devices and screen sizes.</p>
+             <h3>CSS Solved a Big Problem</h3>
+             <p>HTML was NEVER intended to contain tags for formatting a web page!<br>
+
+                HTML was created to describe the content of a web page, like:<br></p>
+                
+               <code>"h1"This is a heading"h1"<br>
+                "p"This is a paragraph."p"
+            </code>
+            <h3>CSS Saves a Lot of Work!</h3>
+            <p>The style definitions are normally saved in external .css files.
+                With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+        </article>
+    </section>
+ 
+
+    <section class="main-section" id="selectors">
+        <header>Selectors</header>
+        <article>
+            <h3>CSS Selectors</h3>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.<br>
+
+                We can divide CSS selectors into five categories:</p>
+                <ul>
+                    <li>Simple selectors (select elements based on name, id, class)</li>
+                    <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                    <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                    <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                    <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+                </ul>
+                <h3>The CSS element Selector</h3>
+                <p>The element selector selects HTML elements based on the element name.</p>
+                <h5>Example</h5>
+                <pre>
+                    <code>
+                        p {
+                            text-align: center;
+                            color: blue;
+                        }
+                    </code>
+                </pre>
+
+                <h3>The CSS id Selector</h3>
+                <p>The id selector uses the id attribute of an HTML element to select a specific element.<br>
+
+                    The id of an element is unique within a page, so the id selector is used to select one unique element!<br>
+                    
+                    To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+
+                    <h5>Example</h5>
+                    <pre>
+                        <code>
+                            #p {
+                                color: white;
+                            }
+                        </code>
+                    </pre>
+
+                    <h3>The CSS class Selector</h3>
+                    <p>The class selector selects HTML elements with a specific class attribute.<br>
+
+                        To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+
+                        <h5>Example</h5>
+                        <pre>
+                            <code>
+                                .center {
+                                    text-align: center;
+                                    color: balck;
+                                }
+                            </code>
+                        </pre>
+
+                        <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+                        <h5>Example</h5>
+                        <pre>
+                            <code>
+                                p .center {
+                                    width: 100px;
+                                }
+                            </code>
+                        </pre>
+                
+                        <h3>The CSS Universal Selector</h3>
+                        <p>The universal selector (*) selects all HTML elements on the page.</p>
+                        <h5>Example</h5>
+                        <pre>
+                            <code>
+                                * {
+                                    text-align: center;
+                                    color: blue;
+                                }
+                            </code>
+                        </pre>
+        </article>
+    </section>
+
+
+<section class="main-section" id="pseudo-classes">
+    <header>Pseudo-classes</header>
+    <article>
+        <h3>What are Pseudo-classes?</h3>
+        <p>A pseudo-class is used to define a special state of an element.<br>
+
+            For example, it can be used to:</p>
+            <ul>
+                <li>Style an element when a user mouses over it</li>
+                <li>Style visited and unvisited links differently</li>
+                <li>Style an element when it gets focus</li>
+            </ul>
+            <h5>Example</h5>
+            <pre>
+                <code>
+                    selector:pseudo-class {
+                        property: value;
+                    }
+                </code>
+            </pre>
+            <h3>Anchor Pseudo-classes</h3>
+            <p>Links can be displayed in different ways:</p>
+            <pre>
+                <code>
+                    /* unvisited link */
+                    a:link {
+                    color: #FF0000;
+                    }
+
+                    /* visited link */
+                    a:visited {
+                    color: #00FF00;
+                    }
+
+                    /* mouse over link */
+                    a:hover {
+                    color: #FF00FF;
+                    }
+
+                    /* selected link */
+                    a:active {
+                    color: #0000FF;
+                    }
+                 </code>
+            </pre>
+    </article>
+</section>
+
+<section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"
+            target="_blank"
+            >MDN</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+    
+    
+    <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
